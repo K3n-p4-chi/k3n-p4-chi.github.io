@@ -2,8 +2,8 @@
 layout: post
 title: "Welcome to My Cloud Security Engineering Journey"
 date: 2025-07-27 18:00:00 +0000
-categories: [career, introduction, azure]
-tags: [cloud-security, azure, career-change, certifications]
+categories: [career-development, certification-journey]
+tags: [cloud-security, azure, career-change, certifications, introduction]
 author: Jean Pougoue
 ---
 
