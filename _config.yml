@@ -1,0 +1,28 @@
+title: "Jean Pougoue - Cloud Security Engineer"
+description: "Documenting my journey from Network Engineering to Cloud Cyber Security"
+author: "Jean Pougoue"
+email: "jdd.pougoue@gmail.com"
+baseurl: ""
+url: "https://jean-pougoue.github.io"
+
+# Theme
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - about.md
+  - posts.md
+
+# Blog settings
+show_excerpts: true
+paginate: 5
+
+# Social links
+github_username: jean-pougoue
+linkedin_username: jean-pougoue
+
+# Google Analytics (optional - add later)
+# google_analytics: UA-XXXXXXXX-X
