@@ -14,6 +14,8 @@ plugins:
 # Navigation
 header_pages:
   - about.md
+  - categories.md
+  - resources.md
   - posts.md
 
 # Blog settings
