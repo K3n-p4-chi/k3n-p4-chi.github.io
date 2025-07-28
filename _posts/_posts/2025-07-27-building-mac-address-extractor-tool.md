@@ -143,4 +143,5 @@ Have you built similar automation tools in your work? I'd love to hear about you
 
 ---
 
+*This post is part of my [Above and Beyond](/above-and-beyond/) series, showcasing real-world problem-solving and initiative in network engineering and cybersecurity.*
 **Tags:** #Automation #Development #ProblemSolving #TeamEfficiency #Innovation #NetworkEngineering #ToolDevelopment
