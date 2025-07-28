@@ -49,7 +49,15 @@ Rather than following standard escalation protocols that would have left the sit
 - Critical nature of immediate communication during incidents
 
 ---
+---
 
+## 📖 **Detailed Project Stories**
+
+For in-depth technical details about specific projects and their implementation:
+
+- [Building a MAC Address Extractor Tool: From Problem to Solution](/2025/07/27/building-mac-address-extractor-tool.html) - Complete development story with technical details and lessons learned
+
+---
 ## 💡 **Key Principles Demonstrated**
 
 ### **Proactive Problem-Solving**
