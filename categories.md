@@ -24,6 +24,9 @@ Weekly dashboards, milestone reviews, and methodology refinements.
 ## 💡 **Learning Resources**
 Course reviews, useful tools, documentation, and community recommendations.
 
+## 🌟 **Above and Beyond**
+Real-world examples of initiative, problem-solving, and going beyond standard requirements to deliver exceptional results.
+
 ---
 
 {% for category in site.categories %}
