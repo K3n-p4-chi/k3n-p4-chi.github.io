@@ -14,11 +14,12 @@ plugins:
 # Navigation
 header_pages:
   - about.md
-  - above-and-beyond.md
   - categories.md
+  - posts.md
+  - above-and-beyond.md
   - resources.md
   - contact.md
-  - posts.md
+  
 
 # Blog settings
 show_excerpts: true
