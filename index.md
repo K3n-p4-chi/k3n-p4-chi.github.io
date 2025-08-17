@@ -6,50 +6,71 @@ title: Home
 # Cloud Security Engineering Journey
 
 Welcome to my professional blog documenting the systematic transition from **Network Engineering** to **Cloud Cyber Security Engineering**.
-
-## 🎯 Current Focus: AZ-900 Final Week
-My Azure Fundamentals exam is scheduled for **July 31, 2025**. Follow along with real practice test scores, study strategies, and exam preparation.
-
-## 📊 Latest Progress
-- **AZ-900 Practice Tests:** 88-92% (Target: 85%+) ✅
-- **Study Hours This Week:** 12/14 planned ✅
-- **Confidence Level:** 9/10 ✅
-- **Status:** EXAM READY 🎯
-
-## 🚀 What You'll Find Here
+## 🗂️ What You'll Find Here
 - **Real certification study data** with actual scores and timelines
 - **Technical automation projects** with code and documentation
 - **Career transition insights** from applications to interviews
 - **Home lab configurations** and cloud experiments
 
-## 📋 Complete Career Roadmap
+## 📈 Career Roadmap & Progression Goals
 
-### 🏗️ **Phase 1: Foundation (July 2025 - February 2026)**
-**Focus:** Core certifications and fundamental skills
-1. **Microsoft AZ-900** (Azure Fundamentals) - July 2025 ✅
-2. **Cisco CCNA** (Renewal) - November 2025
-3. **CompTIA Security+** - December 2025
-4. **Python PCEP + PowerShell Skills** - February 2026
+### 🏗️ **Phase 1: Foundation Building (August 2025 - March 2026)**
+**Duration:** 7 months | **Study Commitment:** 24+ hours/week intensive focus
 
-### 🎯 **Phase 2: Specialisation (March 2026 - December 2026)**
-**Focus:** Azure security and cloud architecture expertise + other skills dependant on the job market
-1. **Microsoft SC-300** (Identity and Access Administrator) - Priority
-2. **Microsoft AZ-500** (Azure Security Engineer) - Core focus
-3. **Microsoft AZ-104** (Azure Administrator) - Foundation
-4. **Microsoft AZ-305** (Azure Solutions Architect) - Advanced
+**Strategic Reality Check:** CCNA assessment week (August 5-9, 2025) revealed **34.7% average** across all domains, requiring complete knowledge rebuild rather than simple renewal.
 
-### 🚀 **Phase 3: Expert Level (2027+)**
-**Focus:** Industry leadership and advanced specialisations
-1. **CISSP** (Certified Information Systems Security Professional)
-2. **Advanced Azure certifications** (Expert level)
-3. **Specialised security frameworks** and industry standards
-4. **Professional speaking and thought leadership**
+**Revised Certification Timeline:**
+- **Microsoft AZ-900** (Azure Fundamentals) - August 2025 ✅
+  
+🎯 Current Focus: CCNA Intensive Study** (August 2025 - February 2026) - Complete foundation rebuild
+- **PowerShell/Bash Mastery** (February 2026) - Automation scripting foundation
+- **SC-900** (March 2026) - Security & Compliance fundamentals
+- **CompTIA Security+** (April 2026) - Industry-standard security certification
 
-### 💼 **Career Progression Goals**
-- **2025:** Foundation completion + job applications
-- **2026:** **Cloud Cyber Security Engineer** role secured
-- **2027+:** Senior/Lead Security Engineer positions
-- **Long-term:** Cloud Security Architect or CISO track
+**Strategic Adaptation:** Python completely paused until CCNA foundations secured. 100% focus on closing critical knowledge gaps identified through systematic assessment.
+
+**Expected Salary Range:** £50,000-£70,000  
+**Target Roles:** Junior Cloud Security Engineer, Network Automation Specialist
+
+### 🔐 **Phase 2: Cloud Network & Security Specialisation (May 2026 - November 2026)**
+**Duration:** 7 months | **Study Commitment:** 20+ hours/week
+
+**Multi-Technology Integration Strategy:**
+- **Python PCEP** (May 2026) - Resume Python with network automation focus
+- **Cisco Meraki Specialist** (June 2026) - Leverage KCP Network experience
+- **Microsoft AZ-500** (August 2026) - Azure Security Engineer Associate
+- **Microsoft AZ-104** (October 2026) - Azure Administrator Associate
+- **Microsoft SC-300** (November 2026) - Identity & Access Administrator
+
+**Automation Trinity:** CCNA + Python + PowerShell creating unique market positioning for infrastructure automation roles.
+
+**Expected Salary Range:** £70,000-£100,000  
+**Target Roles:** Cloud Security Engineer, Infrastructure Automation Specialist, Senior Network Engineer
+
+**Target Career Opportunity: Infrastructure Engineer**
+
+**Market Research Validation:** Hedge fund Infrastructure Engineer roles (£80-85K + 25% bonus = £100-106K total) perfectly align with Phase 2 skill development, representing significant salary acceleration opportunity.
+
+**Application Timeline:** June-August 2026 (post-CCNA completion with automation portfolio)
+
+### 💰 **Phase 3: Advanced Architecture & Leadership (December 2026 - May 2027)**
+**Duration:** 6/7 months | **Study Commitment:** 15+ hours/week
+
+**Expert-Level Positioning:**
+- **Microsoft AZ-305** (February 2027) - Azure Solutions Architect Expert
+- **Advanced Specialisations** (May 2027) - CISSP preparation or additional expert certifications
+- **Enterprise Portfolio** - Public GitHub repository with production-grade automation projects
+
+**Expected Salary Range:** £100,000-£130,000+  
+**Target Roles:** Principal Cloud Engineer, Cloud Security Architect, Infrastructure Engineering Manager
+
+
+### 🛠️ **Risk Management & Adaptation Strategy**
+**"Python as Constant Companion" Paused:** Assessment data revealed critical need for singular CCNA focus. Python will resume May 2026 integrated with network automation applications.
+
+**Assessment-Driven Planning:** Weekly progress validation using MeasureUp practice tests with systematic domain rebuilding approach.
+
+**Career Acceleration Potential:** Structured approach positions for premium financial services roles exceeding original salary projections by £20-50K annually.
 
 ### 🛠️ **Automation & Portfolio Development**
 **Ongoing throughout all phases:**
