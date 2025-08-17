@@ -31,3 +31,25 @@ linkedin_username: jean-pougoue
 
 # Google Analytics (optional - add later)
 # google_analytics: UA-XXXXXXXX-X
+
+# Collections for hierarchical organization
+collections:
+  continuous-learning:
+    output: true
+    permalink: /continuous-learning/:path/
+  real-life-application:
+    output: true
+    permalink: /real-life-application/:path/
+
+# Defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "continuous-learning"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "real-life-application"
+    values:
+      layout: "post"
