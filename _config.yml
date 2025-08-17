@@ -14,11 +14,11 @@ plugins:
 # Navigation
 header_pages:
   - about.md
-  - categories.md
-  - posts.md
-  - above-and-beyond.md
+  - continuous-learning.md
+  - real-life-application.md
   - resources.md
   - contact.md
+  - posts.md
   
 
 # Blog settings
