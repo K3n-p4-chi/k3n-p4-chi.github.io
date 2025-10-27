@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Homelab Milestone 2: Dual Monitoring Platform Deployed"
+title: "Homelab Milestone 1: Dual Monitoring Platform Deployed"
 date: 2025-10-27 01:04:28 +0000
 categories: infrastructure homelab
-tags: [homelab, infrastructure, automation, ai-orchestration, milestone-2]
+tags: [homelab, infrastructure, automation, ai-orchestration, milestone-1]
 phase: "Phase 1-3: Foundation - Monitoring Infrastructure"
-milestone: 2
+milestone: 1
 ---
 
-# Homelab Milestone 2: Dual Monitoring Platform Deployed
+# Homelab Milestone 1: Dual Monitoring Platform Deployed
 
 > **Security Note**: All credentials, IP addresses, MAC addresses, and sensitive
 > information in this post are **fictional examples** sanitized for publication.
@@ -399,7 +399,7 @@ done, pending = await asyncio.wait(
 
 ## Project Series
 
-This is **Milestone 2** in my AI-Powered Home Lab series.
+This is **Milestone 1** in my AI-Powered Home Lab series.
 
 **Previous posts:**
 - [Part 1: Architecture & Planning](link-to-part-1)
