@@ -4,7 +4,7 @@ title: "Security Foundations Block 1: Orientation & Core Principles"
 date: 2025-11-03 00:00:00 +0000
 categories: study-notes learning
 tags: [study, security-foundations-block-1:-orientation-&-core-principles, week-1]
-duration: 120
+duration: -1404
 completion: 100%
 week: 1
 session_type: CORE
@@ -17,7 +17,7 @@ session_type: CORE
 **Week 1:** Security Foundations & Orientation  
 **Type:** CORE  
 **Scheduled:** 22:00 (120 min)  
-**Actual:** 21:30 - 23:30 (120 min)  
+**Actual:** 23:44 - 00:20 (-1404 min)  
 **Completion:** 100%  
 **Date:** 03 November 2025  
 **Course Link:** [Security Foundations Block 1: Orientation & Core Principles](https://app.qa.com/learning-paths/discover-security-foundations-online-csl4-v2-a41-1698-4212/)
@@ -26,27 +26,18 @@ session_type: CORE
 
 | Aspect | Rating |
 |--------|--------|
-| Mood | ⭐⭐ |
-| Difficulty | ⭐⭐⭐ |
-| Quality | ⭐⭐⭐⭐ |
+| Mood | ⭐⭐⭐⭐ |
+| Difficulty | ⭐ |
+| Quality | ⭐⭐⭐ |
 | Value | ⭐⭐⭐⭐ |
 
 ## Key Takeaways
 
-Risk management in an information security context, CIA triad, ISO2700 set of standards, Various types of framework and their core concepts, Cyberattacks and measures to counter them
+Mastering powershell command line interface (CLI) is a great way to manage your Azure ENV.
 
 ## Session Notes
 
-1st 5 lectures. 
-
-## Questions & Review Points
-
-Will need to review a few more times "Quantitive Risk Estimation" segment in the "Security Risk Identification" chapter of the "Fundamentals of Information Security Risk Management" lecture. Lots of technical terms.
-
-
-## Review Status
-
-⚠️ **Review Needed** - This topic requires additional review or practice.
+This was a guided lab. Everything explained, little coding required on my part. Couple clicks there and there, running pre-written script to setup key vault service, create a VM, and encrypt its disk using powershell only
 
 ---
 *Automatically logged from Unified Enhanced Study Tracker*
