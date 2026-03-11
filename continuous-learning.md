@@ -1,63 +1,63 @@
 ---
 layout: page
-title: Continuous Learning
-permalink: /continuous-learning/
+title: My Upskill Journey
+permalink: /upskill-journey/
 ---
 
-# Continuous Learning
+# My Upskill Journey
 
-This section documents my systematic approach to technical certification and skill development. Each certification path includes detailed study notes, practice sessions, laboratory exercises, and assessment tracking with real data from actual study sessions.
+This section is the backbone of the whole site. It tracks the structured learning journey, the certification order, and the evidence of progress behind the move into cloud security.
 
-## Current Learning Tracks
+## Main Areas Inside This Journey
 
-### **AZ-900 (Azure Fundamentals)**
-- **Status:** Completed August 2025
-- **Notes:** Foundation Azure knowledge with practical applications
+### Certification Study
+- Security+
+- MD-102
+- MS-102
+- CCNA renewal
+- Meraki ECMS2
 
-### **CCNA (Cisco Certified Network Associate)**
-- **Status:** Active - Intensive Study Phase (August 2025 - February 2026)
-- **Assessment Reality:** 34.7% average requiring complete knowledge rebuild
-- **Study Commitment:** 24+ hours/week systematic domain coverage
+### Parallel Skill Tracks
+- Python PCEP
+- PowerShell
 
-#### **CCNA Study Notes:**
-- [Day 01 - Physical Interfaces & Ethernet Standards](/continuous-learning/ccna/notes/day01-physical-interfaces/)
-- [Day 02 - OSI Model Deep Dive](/continuous-learning/ccna/notes/day02-osi-model/)
+### Hands-On Lab Work
+- Hyper-V and virtual networking
+- Security monitoring and SIEM experiments
+- Traffic capture and analysis
 
-#### **CCNA Laboratory Work:**
-- Packet Tracer exercises and network simulations
-- Real equipment configuration and troubleshooting
+## Current Track Order
 
-### **CompTIA Security+**
-- **Status:** Planned (April 2026)
-- **Focus:** Industry-standard security certification
+1. Security+
+2. MD-102
+3. MS-102
+4. CCNA renewal
+5. Meraki ECMS2
 
-### **Python PCEP (Certified Entry-Level Python Programmer)**
-- **Status:** Paused until CCNA completion (Strategic adaptation)
-- **Resume:** May 2026 with network automation focus
-
-### **PowerShell Mastery**
-- **Status:** Active development (February 2026 target)
-- **Focus:** Windows administration and automation scripting
-
-### **Future Certification Tracks**
-- **ECMS 1 & 2** (Meraki Specialist)
-- **SC-900** (Security & Compliance Fundamentals)  
-- **AZ-104** (Azure Administrator)
-- **AZ-500** (Azure Security Engineer)
-- **AZ-700** (Azure Network Engineer)
-- **SC-300** (Identity and Access Administrator)
+Python and PowerShell run alongside the main cert track rather than waiting for a separate phase.
 
 ## Study Methodology
 
-### **Assessment-Driven Learning**
-Every new certification begins with comprehensive assessment week using MeasureUp practice tests to identify knowledge gaps and prioritise study time effectively.
+### Assessment First
+Each certification starts with a diagnostic or mock exam before study time is allocated.
 
-### **Systematic Progress Tracking** 
-Weekly practice test validation with documented score improvements and weak area identification for targeted remediation.
+### Weakest Domain First
+Study time goes first to the weakest domain, not the most interesting one.
 
-### **Real-World Application**
-All learning immediately applied to KCP Network's 70-site infrastructure for practical reinforcement and portfolio development.
+### Parallel Reinforcement
+Python and PowerShell continue in the background to keep automation growing during certification work.
+
+### Short Reliable Sessions
+The current life setup requires shorter, repeatable sessions instead of idealised long blocks.
+
+## Read The Evidence
+
+- [Study Notes](/study-notes/)
+- [CyberSec Documented Home Labs](/home-labs/)
+- [Home Projects](/home-projects/)
+- [Skills Applied at Work](/skills-applied-at-work/)
+- [Planning & Tools](/planning-tools/)
 
 ---
 
-*This section is updated weekly with new study notes, laboratory exercises, and progress documentation.*
+*This page defines the journey. The linked sections contain the proof.*

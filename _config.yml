@@ -1,73 +1,77 @@
 title: "Jean Pougoue - Cloud Security Engineer"
-description: "Documenting my journey from Network Engineering to Cloud Cyber Security"
+description: "Documenting my journey from network engineering to cloud security."
 author: "Jean Pougoue"
 email: "jdd.pougoue@gmail.com"
 baseurl: ""
-url: "https://jean-pougoue.github.io"
+url: "https://k3n-p4-chi.github.io"
 
-# Theme
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Navigation
 header_pages:
   - about.md
   - continuous-learning.md
-  - study-notes.md
-  - planning-tools.md
   - real-life-application.md
+  - home-projects.md
+  - skills-applied-at-work.md
+  - planning-tools.md
   - resources.md
   - contact.md
   - posts.md
 
-
-# Blog settings
 show_excerpts: true
 paginate: 5
 
-# Social links
-github_username: jean-pougoue
+github_username: k3n-p4-chi
 linkedin_username: jean-pougoue
 
-# Google Analytics (optional - add later)
-# google_analytics: UA-XXXXXXXX-X
-
-# Collections for hierarchical organization
 collections:
-  continuous-learning:
-    output: true
-    permalink: /continuous-learning/:path/
-  real-life-application:
-    output: true
-    permalink: /real-life-application/:path/
-  planning-tools:
-    output: true
-    permalink: /planning-tools/:path/
   study-notes:
     output: true
     permalink: /study-notes/:path/
+  planning-tools:
+    output: true
+    permalink: /planning-tools/:path/
+  infrastructure-notes:
+    output: true
+    permalink: /home-labs/:path/
+  home-projects:
+    output: true
+    permalink: /home-projects/:path/
+  work-applied:
+    output: true
+    permalink: /skills-applied-at-work/:path/
 
-# Defaults for collections
 defaults:
-  - scope:
-      path: ""
-      type: "continuous-learning"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "real-life-application"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "planning-tools"
-    values:
-      layout: "post"
   - scope:
       path: ""
       type: "study-notes"
     values:
       layout: "post"
+      section: "Study Notes"
+  - scope:
+      path: ""
+      type: "planning-tools"
+    values:
+      layout: "post"
+      section: "Planning Tools"
+  - scope:
+      path: ""
+      type: "infrastructure-notes"
+    values:
+      layout: "post"
+      section: "CyberSec Documented Home Labs"
+  - scope:
+      path: ""
+      type: "home-projects"
+    values:
+      layout: "post"
+      section: "Home Projects"
+  - scope:
+      path: ""
+      type: "work-applied"
+    values:
+      layout: "post"
+      section: "Skills Applied for Work"
