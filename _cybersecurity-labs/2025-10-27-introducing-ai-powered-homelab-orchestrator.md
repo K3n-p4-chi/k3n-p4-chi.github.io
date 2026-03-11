@@ -2,13 +2,14 @@
 layout: post
 title: "Introducing: AI-Powered Home Lab Orchestrator"
 date: 2025-10-27 00:00:00 +0000
-categories: infrastructure homelab
-tags: [homelab, infrastructure, automation, ai-orchestration, project-intro]
+categories: [cybersecurity-labs]
+tags: [cybersecurity, homelab, network-hardening, automation, ai-orchestration, project-intro]
 ---
 
 # Introducing: AI-Powered Home Lab Orchestrator
 
-> **Note**: This is the introduction to my ongoing home lab automation project.
+> **Note**: This is the introduction to an ongoing project that now sits within the wider
+> **Hardening My Network** cybersecurity track.
 > Jump to [Milestone 1: Dual Monitoring Platform]({% post_url 2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed %})
 > to see the first major achievement.
 

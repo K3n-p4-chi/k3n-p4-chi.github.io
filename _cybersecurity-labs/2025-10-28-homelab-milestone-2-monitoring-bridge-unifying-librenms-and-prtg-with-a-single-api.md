@@ -2,10 +2,11 @@
 layout: post
 title: "Homelab Milestone 2: Monitoring Bridge: Unifying LibreNMS and PRTG with a Single API"
 date: 2025-10-28 00:43:44 +0000
-categories: infrastructure homelab
-tags: [homelab, infrastructure, automation, ai-orchestration, milestone-2]
+categories: [cybersecurity-labs]
+tags: [cybersecurity, homelab, network-hardening, monitoring, automation, ai-orchestration, milestone-2]
 phase: "Phase 4: Monitoring Bridge"
 milestone: 2
+summary: "Monitoring bridge groundwork forming part of the wider hardening-my-network cybersecurity project."
 ---
 
 # Homelab Milestone 2: Monitoring Bridge: Unifying LibreNMS and PRTG with a Single API
@@ -40,10 +41,11 @@ Implement alert merging endpoint, add device sensor aggregation, WebSocket suppo
 
 ## Project Series
 
-This is **Milestone 2** in my AI-Powered Home Lab series.
+This is **Milestone 2** in my wider **Hardening My Network** cybersecurity project.
 
 **Previous posts:**
-- [Part 1: Architecture & Planning](link-to-part-1)
+- [Introducing: AI-Powered Home Lab Orchestrator](/cybersecurity-labs/2025-10-27-introducing-ai-powered-homelab-orchestrator/)
+- [Homelab Milestone 1: Dual Monitoring Platform Deployed](/cybersecurity-labs/2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed/)
 
 **Coming soon:**
 - Next milestone post

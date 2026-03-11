@@ -53,7 +53,7 @@ The current life setup requires shorter, repeatable sessions instead of idealise
 ## Read The Evidence
 
 - [Study Notes](/study-notes/)
-- [CyberSec Documented Home Labs](/home-labs/)
+- [Cybersecurity Labs](/cybersecurity-labs/)
 - [Home Projects](/home-projects/)
 - [Skills Applied at Work](/skills-applied-at-work/)
 - [Planning & Tools](/planning-tools/)

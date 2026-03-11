@@ -2,10 +2,11 @@
 layout: post
 title: "Homelab Milestone 1: Dual Monitoring Platform Deployed"
 date: 2025-10-27 01:04:28 +0000
-categories: infrastructure homelab
-tags: [homelab, infrastructure, automation, ai-orchestration, milestone-1]
+categories: [cybersecurity-labs]
+tags: [cybersecurity, homelab, network-hardening, monitoring, automation, ai-orchestration, milestone-1]
 phase: "Phase 1-3: Foundation - Monitoring Infrastructure"
 milestone: 1
+summary: "Foundation monitoring infrastructure for the wider hardening-my-network cybersecurity project."
 ---
 
 # Homelab Milestone 1: Dual Monitoring Platform Deployed

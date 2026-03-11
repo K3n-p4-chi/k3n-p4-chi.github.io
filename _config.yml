@@ -13,7 +13,7 @@ plugins:
 header_pages:
   - about.md
   - continuous-learning.md
-  - real-life-application.md
+  - cybersecurity-labs.md
   - home-projects.md
   - skills-applied-at-work.md
   - planning-tools.md
@@ -34,9 +34,9 @@ collections:
   planning-tools:
     output: true
     permalink: /planning-tools/:path/
-  infrastructure-notes:
+  cybersecurity-labs:
     output: true
-    permalink: /home-labs/:path/
+    permalink: /cybersecurity-labs/:path/
   home-projects:
     output: true
     permalink: /home-projects/:path/
@@ -59,10 +59,10 @@ defaults:
       section: "Planning Tools"
   - scope:
       path: ""
-      type: "infrastructure-notes"
+      type: "cybersecurity-labs"
     values:
       layout: "post"
-      section: "CyberSec Documented Home Labs"
+      section: "Cybersecurity Labs"
   - scope:
       path: ""
       type: "home-projects"

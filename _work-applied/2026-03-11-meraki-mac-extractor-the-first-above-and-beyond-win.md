@@ -27,7 +27,7 @@ It came from real work, real friction, and a real need to make a repetitive task
 
 Supporting source material for this post lives outside the blog repo at:
 
-`Branch 3 - Blog/Source Material/Skills Applied at Work/Meraki MAC Extractor/`
+`Branch 3 - Blog/Source Material/work-applied/meraki-mac-extractor/`
 
 That folder contains:
 

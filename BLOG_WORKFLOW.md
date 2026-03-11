@@ -6,12 +6,12 @@ This repo is the source for the live blog at `https://k3n-p4-chi.github.io`.
 
 - `continuous-learning.md`: public page title is `My Upskill Journey`
 - `study-notes.md`: landing page for study-session and certification notes
-- `real-life-application.md`: public page title is `CyberSec Documented Home Labs`
+- `cybersecurity-labs.md`: landing page for security-focused lab projects
 - `home-projects.md`: landing page for standalone home projects
 - `skills-applied-at-work.md`: landing page for work-relevant technical applications
 - `planning-tools.md`: landing page for planning sessions, scripts, and tracker work
 - `_study-notes/`: actual study entries
-- `_infrastructure-notes/`: actual home lab entries
+- `_cybersecurity-labs/`: actual cybersecurity lab entries
 - `_home-projects/`: actual home project entries
 - `_work-applied/`: actual work-applied entries
 - `_planning-tools/`: actual planning and tooling entries
@@ -28,9 +28,9 @@ Path:
 Path:
 `_planning-tools/YYYY-MM-DD-short-title.md`
 
-### Home lab post
+### Cybersecurity lab post
 Path:
-`_infrastructure-notes/YYYY-MM-DD-short-title.md`
+`_cybersecurity-labs/YYYY-MM-DD-short-title.md`
 
 ### Home project post
 Path:
@@ -59,7 +59,7 @@ Use categories like this:
 
 - Study entry: `categories: [study-notes]`
 - Planning entry: `categories: [planning-tools]`
-- Home lab entry: `categories: [home-labs]`
+- Cybersecurity lab entry: `categories: [cybersecurity-labs]`
 - Home project entry: `categories: [home-projects]`
 - Work-applied entry: `categories: [skills-applied-at-work]`
 

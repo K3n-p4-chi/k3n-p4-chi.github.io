@@ -30,7 +30,7 @@ Python and PowerShell run in parallel as practical support tracks.
 
 - [My Upskill Journey](/upskill-journey/) explains the current study model and active track order
 - [Study Notes](/study-notes/) contains revision logs, session notes, and concept breakdowns
-- [CyberSec Documented Home Labs](/home-labs/) contains hands-on security and monitoring lab work
+- [Cybersecurity Labs](/cybersecurity-labs/) contains security-focused build work, monitoring, and defensive lab projects
 - [Home Projects](/home-projects/) contains standalone build projects from the home environment
 - [Skills Applied at Work](/skills-applied-at-work/) contains practical work-relevant implementations
 - [Planning & Tools](/planning-tools/) covers planning sessions, trackers, and automation
