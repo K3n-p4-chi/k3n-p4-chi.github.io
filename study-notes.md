@@ -6,37 +6,49 @@ permalink: /study-notes/
 
 # Study Notes & Learning
 
-Detailed notes from actual study sessions, documenting what I'm learning, my understanding of concepts, and practical applications. This is the knowledge base built from real study time, not just certification prep—it's about truly understanding the material.
+This section is the working record of certification study, revision blocks, and concept consolidation. It is where the real learning trail lives: what was studied, what clicked, what needs review, and how the current track is progressing.
 
-## Active Study Tracks
+## Current Focus
 
-### Security Management & Auditing (Week 5)
-Current focus on information security frameworks, risk management, and audit processes.
+- Security+
+- Python PCEP
+- PowerShell support work
+- Microsoft track preparation
 
-### Network Fundamentals (CCNA)
-Systematic rebuild of networking knowledge with detailed module-by-module notes.
+## What Belongs Here
 
-### Cloud Security (Azure)
-Practical Azure security implementation and best practices.
+- Domain-by-domain certification notes
+- Revision session write-ups
+- Quiz reflections and score analysis
+- Practical takeaways from labs or guided exercises
 
-## Study Session Logs
+## Latest Entries
 
-Automatically published study sessions showing:
-- What topics were covered
-- Time spent and completion percentage
-- Key takeaways and understanding
-- Questions and areas needing review
-- Practical applications attempted
+{% assign entries = site["study-notes"] | sort: "date" | reverse %}
+{% if entries.size > 0 %}
+{% for post in entries %}
+## [{{ post.title }}]({{ post.url }})
+*{{ post.date | date: "%B %d, %Y" }}*
 
-## Learning Reflections
+{{ post.summary | default: post.excerpt }}
 
-Regular reflections on:
-- Concepts that clicked
-- Challenges encountered
-- Study technique effectiveness
-- Knowledge connections across domains
-- Real-world application insights
+**Tags:** {{ post.tags | join: ", " }}
+
+---
+{% endfor %}
+{% else %}
+No study notes have been published yet.
+{% endif %}
+
+## Writing Standard
+
+Each entry should answer four questions quickly:
+
+- What did I study?
+- What did I understand?
+- What remains weak?
+- What is the next action?
 
 ---
 
-*These notes represent genuine learning in progress—complete with mistakes, discoveries, and the messy reality of building expertise from scratch.*
+*This section should stay factual and cumulative. It is the evidence trail for the learning process.*

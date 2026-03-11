@@ -6,31 +6,47 @@ permalink: /planning-tools/
 
 # Planning & Tools
 
-This section documents the planning process, automation scripts, and tools I've built to support my learning journey. This is where the systematic approach comes together—how I plan my study schedules, track progress, and automate repetitive tasks.
+This section covers the operational side of the journey: planning sessions, automation work, tracker improvements, and the systems used to keep the upskilling project structured.
 
-## Planning Sessions
+## What Belongs Here
 
-Documentation of planning sessions with Claude Code, showing how weekly schedules are created, problems are solved, and systems are improved.
+- Schedule design sessions
+- Tracker and automation updates
+- Script design notes
+- Process fixes and workflow improvements
 
-## Automation Scripts
+## Core Themes
 
-### Schedule Generation System
-- **Weekly Schedule Generator**: Python script that creates study schedules from JSON configurations
-- **Google Calendar Integration**: Automatic ICS file generation and upload
-- **Module Extraction**: Pulls actual course content from master catalogue
+- Planning discipline
+- Repeatable systems
+- Automation over manual repetition
+- Accurate source data and auditability
 
-### Study Tracking
-- **Enhanced Study Tracker**: Calendar-based HTML tracker with session logging
-- **Progress Analytics**: Automated tracking of study hours, completion rates, and goals
-- **Blog Integration**: Automatic commit of study sessions to blog
+## Latest Entries
 
-## System Architecture
+{% assign entries = site["planning-tools"] | sort: "date" | reverse %}
+{% if entries.size > 0 %}
+{% for post in entries %}
+## [{{ post.title }}]({{ post.url }})
+*{{ post.date | date: "%B %d, %Y" }}*
 
-Documentation of how all the pieces fit together:
-- JSON configuration files → Weekly schedule generation → ICS calendar events
-- Study sessions → Tracker → Blog posts → Public documentation
-- Course catalogue → Module extraction → Accurate content planning
+{{ post.summary | default: post.excerpt }}
+
+**Tags:** {{ post.tags | join: ", " }}
+
+---
+{% endfor %}
+{% else %}
+No planning or tooling entries have been published yet.
+{% endif %}
+
+## Typical Post Types
+
+- Planning session logs
+- Script implementation notes
+- Debugging and architecture write-ups
+- Workflow changes that affect study delivery
 
 ---
 
-*This section showcases the engineering approach to career development—treating learning as a project with proper planning, automation, and documentation.*
+*This is the systems-engineering layer behind the public study journey.*
