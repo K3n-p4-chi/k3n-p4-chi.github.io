@@ -10,7 +10,7 @@ tags: [cybersecurity, homelab, network-hardening, automation, ai-orchestration, 
 
 > **Note**: This is the introduction to an ongoing project that now sits within the wider
 > **Hardening My Network** cybersecurity track.
-> Jump to [Milestone 1: Dual Monitoring Platform]({% post_url 2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed %})
+> Jump to [Milestone 1: Dual Monitoring Platform](/cybersecurity-labs/2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed/)
 > to see the first major achievement.
 
 ## The Vision
@@ -90,7 +90,7 @@ An AI-powered orchestration layer that:
 - Documentation structure created
 
 ### ✅ Phase 1-3: Monitoring Infrastructure (COMPLETE)
-- **[Milestone 1]({% post_url 2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed %}): Dual Monitoring Platform Deployed**
+- **[Milestone 1](/cybersecurity-labs/2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed/): Dual Monitoring Platform Deployed**
   - LibreNMS: 11 core devices
   - PRTG: 68 devices across all VLANs
   - Both APIs operational
@@ -204,7 +204,7 @@ This isn't a toy project:
 - ✅ Ready for Monitoring Bridge deployment
 
 **Read the details**:
-[Milestone 1: Dual Monitoring Platform Deployed]({% post_url 2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed %})
+[Milestone 1: Dual Monitoring Platform Deployed](/cybersecurity-labs/2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed/)
 
 ## Follow the Journey
 
@@ -236,7 +236,7 @@ I'd love to hear from you!
 
 ## Project Links
 
-- [Milestone 1: Dual Monitoring Platform]({% post_url 2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed %})
+- [Milestone 1: Dual Monitoring Platform](/cybersecurity-labs/2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed/)
 - GitHub repository (coming soon)
 - Architecture diagrams (coming soon)
 
@@ -244,4 +244,4 @@ I'd love to hear from you!
 
 *This post introduces my AI-Powered Home Lab Orchestrator project.*
 *All technical details, code examples, and lessons learned are in the milestone posts.*
-*First actual deployment: [Milestone 1]({% post_url 2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed %})*
+*First actual deployment: [Milestone 1](/cybersecurity-labs/2025-10-27-homelab-milestone-1-dual-monitoring-platform-deployed/)*

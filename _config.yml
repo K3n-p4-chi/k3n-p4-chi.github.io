@@ -9,7 +9,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
 
 exclude:
   - project-sources/
@@ -33,7 +32,6 @@ header_pages:
   - posts.md
 
 show_excerpts: true
-paginate: 5
 
 github_username: k3n-p4-chi
 linkedin_username: jean-pougoue
