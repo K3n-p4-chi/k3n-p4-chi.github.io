@@ -13,5 +13,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+# `wdm` speeds up file watching on older Windows Ruby builds, but 0.1.1 fails to
+# compile under Ruby 3.3.x. Excluding it there keeps `jekyll build` usable.
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin] if Gem::Version.new(RUBY_VERSION) < Gem::Version.new("3.3")
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]

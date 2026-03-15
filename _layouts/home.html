@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="home-wrapper">
+  {% include tree-nav.html %}
+  <div class="home-content">
+    {{ content }}
+    {% if site.paginate %}
+      <div class="pager">
+        {% if paginator.previous_page %}
+          <a class="previous-page" href="{{ paginator.previous_page_path | relative_url }}">Newer Posts</a>
+        {% endif %}
+        {% if paginator.next_page %}
+          <a class="next-page" href="{{ paginator.next_page_path | relative_url }}">Older Posts</a>
+        {% endif %}
+      </div>
+    {% else %}
+      {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+      {% if posts.size > 0 %}
+        <h2 class="post-list-heading">Recent Posts</h2>
+        <ul class="post-list">
+          {% for post in posts limit:5 %}
+          <li>
+            <span class="post-meta">{{ post.date | date_to_string }}</span>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            {% if site.show_excerpts %}
+              {{ post.excerpt }}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

@@ -1,4 +1,5 @@
 title: "Jean Pougoue - Cloud Security Engineer"
+header_title: "Home"
 description: "Documenting my journey from network engineering to cloud security."
 author: "Jean Pougoue"
 email: "jdd.pougoue@gmail.com"
@@ -21,14 +22,13 @@ exclude:
   - .gitattributes
 
 header_pages:
-  - about.md
   - continuous-learning.md
-  - cybersecurity-labs.md
-  - home-projects.md
-  - skills-applied-at-work.md
   - planning-tools.md
   - resources.md
-  - contact.md
+  - cybersecurity-labs.md
+  - skills-applied-at-work.md
+  - home-projects.md
+  - about.md
   - posts.md
 
 show_excerpts: true

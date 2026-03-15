@@ -1,0 +1,85 @@
+<nav class="tree-nav" aria-label="Tree navigation">
+  {% assign current_url = page.url | default: "/" %}
+  <svg viewBox="0 0 280 620" xmlns="http://www.w3.org/2000/svg" aria-labelledby="tree-nav-title tree-nav-desc" role="img">
+    <title id="tree-nav-title">Upskill site navigation tree</title>
+    <desc id="tree-nav-desc">A tree-shaped navigation menu linking to the main sections of the site.</desc>
+
+    <defs>
+      <linearGradient id="trunk-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#a97449" />
+        <stop offset="100%" stop-color="#6f4528" />
+      </linearGradient>
+    </defs>
+
+    <path d="M86 26 C 70 160, 70 470, 86 596" fill="none" stroke="url(#trunk-gradient)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M86 150 C 64 194, 64 240, 86 282" fill="none" stroke="#7d5234" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+
+    <text x="88" y="318" fill="#4caf50" font-family="'Courier New', Courier, monospace"
+      font-size="13" font-weight="700" letter-spacing="5" text-anchor="middle"
+      transform="rotate(-90 88 318)">UPSKILL</text>
+
+    {% assign home_class = "" %}
+    {% if current_url == "/" %}{% assign home_class = "active" %}{% endif %}
+    <line x1="86" y1="52" x2="164" y2="52" class="tree-branch" />
+    <a href="{{ '/' | relative_url }}" class="tree-anchor {{ home_class }}">
+      <text x="172" y="56" class="tree-link {{ home_class }}">Home</text>
+    </a>
+
+    {% assign journey_class = "" %}
+    {% if current_url == "/upskill-journey/" %}{% assign journey_class = "active" %}{% endif %}
+    <line x1="86" y1="126" x2="166" y2="126" class="tree-branch" />
+    <a href="{{ '/upskill-journey/' | relative_url }}" class="tree-anchor {{ journey_class }}">
+      <text x="174" y="130" class="tree-link {{ journey_class }}">My Upskill Journey</text>
+    </a>
+
+    {% assign planning_class = "" %}
+    {% if current_url == "/planning-tools/" %}{% assign planning_class = "active" %}{% endif %}
+    <line x1="120" y1="126" x2="120" y2="172" class="tree-branch tree-branch--sub" />
+    <line x1="120" y1="172" x2="182" y2="172" class="tree-branch tree-branch--sub" />
+    <a href="{{ '/planning-tools/' | relative_url }}" class="tree-anchor {{ planning_class }}">
+      <text x="190" y="176" class="tree-link tree-link--sub {{ planning_class }}">Planning &amp; Tools</text>
+    </a>
+
+    {% assign resources_class = "" %}
+    {% if current_url == "/resources/" %}{% assign resources_class = "active" %}{% endif %}
+    <line x1="86" y1="238" x2="164" y2="238" class="tree-branch" />
+    <a href="{{ '/resources/' | relative_url }}" class="tree-anchor {{ resources_class }}">
+      <text x="172" y="242" class="tree-link {{ resources_class }}">Resources</text>
+    </a>
+
+    {% assign labs_class = "" %}
+    {% if current_url == "/cybersecurity-labs/" %}{% assign labs_class = "active" %}{% endif %}
+    <line x1="86" y1="314" x2="164" y2="314" class="tree-branch" />
+    <a href="{{ '/cybersecurity-labs/' | relative_url }}" class="tree-anchor {{ labs_class }}">
+      <text x="172" y="318" class="tree-link {{ labs_class }}">Cybersecurity Labs</text>
+    </a>
+
+    {% assign work_class = "" %}
+    {% if current_url == "/skills-applied-at-work/" %}{% assign work_class = "active" %}{% endif %}
+    <line x1="86" y1="392" x2="164" y2="392" class="tree-branch" />
+    <a href="{{ '/skills-applied-at-work/' | relative_url }}" class="tree-anchor {{ work_class }}">
+      <text x="172" y="396" class="tree-link {{ work_class }}">Skills Applied at Work</text>
+    </a>
+
+    {% assign projects_class = "" %}
+    {% if current_url == "/home-projects/" %}{% assign projects_class = "active" %}{% endif %}
+    <line x1="86" y1="470" x2="164" y2="470" class="tree-branch" />
+    <a href="{{ '/home-projects/' | relative_url }}" class="tree-anchor {{ projects_class }}">
+      <text x="172" y="474" class="tree-link {{ projects_class }}">Home Projects</text>
+    </a>
+
+    {% assign about_class = "" %}
+    {% if current_url == "/about/" %}{% assign about_class = "active" %}{% endif %}
+    <line x1="86" y1="536" x2="164" y2="536" class="tree-branch" />
+    <a href="{{ '/about/' | relative_url }}" class="tree-anchor {{ about_class }}">
+      <text x="172" y="540" class="tree-link {{ about_class }}">About &amp; Contact</text>
+    </a>
+
+    {% assign posts_class = "" %}
+    {% if current_url == "/posts/" %}{% assign posts_class = "active" %}{% endif %}
+    <line x1="86" y1="590" x2="164" y2="590" class="tree-branch" />
+    <a href="{{ '/posts/' | relative_url }}" class="tree-anchor {{ posts_class }}">
+      <text x="172" y="594" class="tree-link {{ posts_class }}">All Posts</text>
+    </a>
+  </svg>
+</nav>
