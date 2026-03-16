@@ -94,22 +94,25 @@ body {
 }
 
 .tree-nav {
-  width: 280px;
-  min-width: 280px;
+  width: 360px;
+  min-width: 360px;
   background:
-    linear-gradient(180deg, rgba(32, 32, 32, 0.95), rgba(24, 24, 24, 0.98)),
+    radial-gradient(circle at 76% 12%, rgba(74, 162, 255, 0.18), transparent 17%),
+    radial-gradient(circle at 22% 88%, rgba(45, 144, 255, 0.14), transparent 24%),
+    linear-gradient(180deg, rgba(6, 10, 18, 1), rgba(11, 14, 20, 0.985) 22%, rgba(8, 10, 14, 0.98) 100%),
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.015) 0,
-      rgba(255, 255, 255, 0.015) 2px,
+      rgba(255, 255, 255, 0.012) 0,
+      rgba(255, 255, 255, 0.012) 2px,
       transparent 2px,
       transparent 8px
     );
-  border-right: 1px solid var(--border-colour);
-  padding: 18px 8px 24px;
+  border-right: 1px solid rgba(76, 103, 136, 0.28);
+  box-shadow: inset -24px 0 80px rgba(0, 0, 0, 0.28);
+  padding: 12px 4px 14px 6px;
   position: sticky;
   top: 0;
-  height: calc(100vh - 0px);
+  height: 100vh;
   overflow-y: auto;
 }
 
@@ -119,81 +122,121 @@ body {
   height: auto;
 }
 
+.tree-cloud-shape {
+  fill: rgba(211, 242, 255, 0.9);
+  filter: url(#soft-blue-glow);
+}
+
+.tree-cloud-particle {
+  fill: rgba(171, 226, 255, 0.78);
+}
+
+.tree-trunk-shell {
+  fill: url(#trunk-edge);
+  opacity: 0.96;
+}
+
 .tree-trunk {
-  fill: none;
-  stroke: url(#trunk-gradient);
-  stroke-width: 16;
-  stroke-linecap: round;
+  fill: url(#trunk-core);
+  opacity: 0.98;
 }
 
 .tree-trunk-flow {
   fill: none;
   stroke: url(#trunk-flow-gradient);
-  stroke-width: 8;
+  stroke-width: 9;
   stroke-linecap: round;
-  opacity: 0.7;
+  opacity: 0.82;
 }
 
 .tree-trunk-detail {
   fill: none;
-  stroke: rgba(53, 31, 18, 0.45);
-  stroke-width: 4;
+  stroke: rgba(102, 72, 44, 0.42);
+  stroke-width: 3.5;
   stroke-linecap: round;
 }
 
 .tree-trunk-detail--alt {
-  stroke: rgba(191, 145, 96, 0.18);
-  stroke-width: 3;
+  stroke: rgba(196, 154, 109, 0.16);
+  stroke-width: 2.2;
 }
 
 .tree-trunk-label {
   fill: var(--accent-green);
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
+  filter: drop-shadow(0 0 10px rgba(95, 191, 103, 0.45));
+}
+
+.tree-limb-shadow {
+  fill: none;
+  stroke: rgba(76, 57, 40, 0.34);
+  stroke-width: 3;
+  stroke-linecap: round;
 }
 
 .tree-particle {
-  fill: rgba(126, 200, 247, 0.22);
+  fill: rgba(126, 200, 247, 0.48);
   font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  filter: drop-shadow(0 0 6px rgba(83, 177, 255, 0.22));
 }
 
 .tree-particle-dot {
-  fill: rgba(126, 200, 247, 0.18);
+  fill: rgba(126, 200, 247, 0.52);
 }
 
 .tree-branch {
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition: transform 0.22s ease, filter 0.22s ease;
   transform-origin: left center;
   cursor: pointer;
 }
 
 .tree-branch:hover,
 .tree-branch:focus-within {
-  transform: translateX(4px);
-  filter: drop-shadow(0 0 6px rgba(80, 180, 255, 0.55));
+  transform: translateX(5px);
+  filter: drop-shadow(0 0 7px rgba(80, 180, 255, 0.42));
 }
 
 .branch-line {
   fill: none;
-  stroke: var(--wood-main);
-  stroke-width: 4;
+  stroke: rgba(85, 67, 54, 0.82);
+  stroke-width: 4.5;
   stroke-linecap: round;
-  transition: stroke 0.2s ease;
+  transition: stroke 0.22s ease, opacity 0.22s ease;
 }
 
 .branch-line--sub {
-  stroke: #7d5234;
+  stroke: rgba(110, 86, 63, 0.72);
   stroke-width: 2.5;
-  stroke-dasharray: 3 4;
+  stroke-dasharray: 3 5;
 }
 
 .tree-branch:hover .branch-line,
 .tree-branch:focus-within .branch-line {
-  stroke: #a0c8f0;
+  stroke: rgba(148, 215, 255, 0.86);
+}
+
+.branch-energy {
+  fill: none;
+  stroke: url(#branch-energy);
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  opacity: 0.82;
+  filter: drop-shadow(0 0 6px rgba(83, 177, 255, 0.35));
+}
+
+.branch-energy--sub {
+  opacity: 0.5;
+}
+
+.branch-energy--amber {
+  stroke: rgba(247, 176, 66, 0.9);
+  filter: drop-shadow(0 0 6px rgba(247, 176, 66, 0.28));
 }
 
 .tree-hitbox {
@@ -206,63 +249,111 @@ body {
 }
 
 .tree-tip {
-  fill: rgba(24, 24, 24, 0.96);
-  stroke: rgba(126, 200, 247, 0.35);
-  stroke-width: 1.2;
+  fill: rgba(13, 18, 26, 0.9);
+  stroke: rgba(126, 200, 247, 0.28);
+  stroke-width: 1;
 }
 
 .tree-tip--sub {
   stroke: rgba(126, 200, 247, 0.22);
 }
 
-.tree-tip-text {
-  fill: var(--text-primary);
-  font-family: var(--font-mono);
-  font-size: 8px;
-  font-weight: 700;
-  text-anchor: middle;
-}
-
-.tree-tip-text--sub {
-  font-size: 7px;
-}
-
 .tree-link {
   fill: var(--text-primary);
-  font-family: var(--font-mono);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   font-size: 11px;
-  letter-spacing: 0.04em;
-  transition: fill 0.2s ease, filter 0.2s ease;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition: fill 0.22s ease, filter 0.22s ease;
 }
 
-.tree-link--sub {
-  fill: var(--text-muted);
+.tree-link--primary {
+  font-size: 13px;
+}
+
+.tree-link--subtle {
+  fill: rgba(232, 232, 232, 0.86);
   font-size: 10px;
-}
-
-.tree-branch:hover .tree-link,
-.tree-branch:focus-within .tree-link,
-.tree-anchor:focus .tree-link,
-.tree-link.active {
-  fill: #7ec8f7;
-  filter: drop-shadow(0 0 5px rgba(120, 200, 255, 0.7));
 }
 
 .tree-link.active {
   fill: var(--accent-green);
   font-weight: 700;
+  filter: drop-shadow(0 0 7px rgba(95, 191, 103, 0.55));
+}
+
+.tree-branch:hover .tree-link,
+.tree-branch:focus-within .tree-link,
+.tree-anchor:focus .tree-link {
+  fill: #9adbff;
+  filter: drop-shadow(0 0 7px rgba(120, 200, 255, 0.62));
+}
+
+.tree-icon {
+  fill: none;
+  stroke: none;
+  filter: drop-shadow(0 0 10px rgba(84, 185, 255, 0.18));
+}
+
+.tree-icon-stroke {
+  fill: none;
+  stroke: rgba(147, 220, 255, 0.95);
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tree-icon-stroke--amber {
+  stroke: rgba(252, 188, 84, 0.95);
+}
+
+.tree-icon-fill {
+  fill: rgba(147, 220, 255, 0.92);
+  stroke: none;
+}
+
+.tree-icon-fill--amber {
+  fill: rgba(252, 188, 84, 0.92);
 }
 
 .tree-root {
   fill: none;
-  stroke: rgba(80, 180, 255, 0.4);
+  stroke: rgba(78, 177, 255, 0.72);
   stroke-width: 2.2;
   stroke-linecap: round;
+  filter: drop-shadow(0 0 6px rgba(78, 177, 255, 0.24));
 }
 
 .tree-root--alt {
-  stroke: rgba(80, 180, 255, 0.26);
+  stroke: rgba(78, 177, 255, 0.42);
   stroke-width: 1.6;
+}
+
+.tree-root--thick {
+  stroke-width: 3.3;
+}
+
+.tree-root--amber {
+  stroke: rgba(248, 176, 61, 0.82);
+  filter: drop-shadow(0 0 6px rgba(248, 176, 61, 0.22));
+}
+
+.tree-root--dim {
+  stroke: rgba(78, 177, 255, 0.26);
+}
+
+.tree-root-node {
+  filter: drop-shadow(0 0 9px currentColor);
+}
+
+.tree-root-node--blue {
+  color: #66c5ff;
+  fill: #66c5ff;
+}
+
+.tree-root-node--amber {
+  color: #f6b14f;
+  fill: #f6b14f;
 }
 
 @media (prefers-reduced-motion: reduce) {
