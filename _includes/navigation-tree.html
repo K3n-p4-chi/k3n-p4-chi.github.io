@@ -1,4 +1,4 @@
-<nav class="tree-nav" aria-label="Tree navigation">
+<nav class="tree-nav tree-nav--overlay" aria-label="Tree navigation">
   {% assign current = page.url | default: "/" %}
   {% assign home_class = "" %}{% if current == "/" %}{% assign home_class = "active" %}{% endif %}
   {% assign upskill_class = "" %}{% if current == "/upskill-journey/" %}{% assign upskill_class = "active" %}{% endif %}
@@ -10,246 +10,25 @@
   {% assign about_class = "" %}{% if current == "/about/" %}{% assign about_class = "active" %}{% endif %}
   {% assign posts_class = "" %}{% if current == "/posts/" %}{% assign posts_class = "active" %}{% endif %}
 
-  <svg viewBox="0 0 420 860" width="420" xmlns="http://www.w3.org/2000/svg" aria-labelledby="tree-nav-title tree-nav-desc" role="img">
-    <title id="tree-nav-title">Upskill site navigation tree</title>
-    <desc id="tree-nav-desc">An interactive technical tree that links to the main sections of the site.</desc>
+  <div class="tree-nav-stage">
+    <img
+      class="tree-nav-art"
+      src="{{ '/assets/images/navigation-tree.png' | relative_url }}"
+      alt=""
+      loading="eager"
+      decoding="async"
+    >
 
-    <defs>
-      <linearGradient id="trunk-core" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#3b2a1d" />
-        <stop offset="35%" stop-color="#2a2018" />
-        <stop offset="100%" stop-color="#120f0e" />
-      </linearGradient>
-      <linearGradient id="trunk-edge" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#8b5e3c" />
-        <stop offset="50%" stop-color="#4f3524" />
-        <stop offset="100%" stop-color="#1a1614" />
-      </linearGradient>
-      <linearGradient id="trunk-signal" x1="0%" y1="100%" x2="0%" y2="0%">
-        <stop offset="0%" stop-color="rgba(51, 163, 255, 0)" />
-        <stop offset="30%" stop-color="rgba(77, 184, 255, 0.06)" />
-        <stop offset="48%" stop-color="rgba(131, 219, 255, 0.4)" />
-        <stop offset="70%" stop-color="rgba(77, 184, 255, 0.08)" />
-        <stop offset="100%" stop-color="rgba(51, 163, 255, 0)" />
-        <animateTransform attributeName="gradientTransform" type="translate" from="0 190" to="0 -210" dur="10s" repeatCount="indefinite" />
-      </linearGradient>
-      <linearGradient id="branch-energy" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="rgba(77, 184, 255, 0)" />
-        <stop offset="30%" stop-color="rgba(77, 184, 255, 0.1)" />
-        <stop offset="100%" stop-color="rgba(120, 210, 255, 0.78)" />
-      </linearGradient>
-      <radialGradient id="cloud-glow" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="rgba(140, 215, 255, 0.85)" />
-        <stop offset="45%" stop-color="rgba(81, 179, 255, 0.35)" />
-        <stop offset="100%" stop-color="rgba(81, 179, 255, 0)" />
-      </radialGradient>
-      <filter id="soft-blue-glow" x="-30%" y="-30%" width="160%" height="160%">
-        <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#54b9ff" flood-opacity="0.4" />
-      </filter>
-    </defs>
-
-    <g class="tree-cloud" aria-hidden="true">
-      <ellipse cx="338" cy="102" rx="66" ry="30" fill="url(#cloud-glow)" />
-      <path d="M286 108 C 288 88, 304 76, 322 80 C 330 58, 356 52, 372 68 C 390 62, 405 74, 406 94 C 420 96, 426 110, 418 120 C 408 134, 382 132, 368 128 C 356 136, 336 138, 322 130 C 304 134, 284 128, 278 116 C 272 108, 278 100, 286 108 Z" class="tree-cloud-shape" />
-      <circle cx="318" cy="84" r="2.6" class="tree-cloud-particle" />
-      <circle cx="374" cy="82" r="2" class="tree-cloud-particle" />
-      <circle cx="404" cy="98" r="1.8" class="tree-cloud-particle" />
-      <circle cx="294" cy="94" r="1.5" class="tree-cloud-particle" />
-    </g>
-
-    <g class="tree-canopy" aria-hidden="true">
-      <text x="58" y="66" class="tree-particle">0</text>
-      <text x="76" y="52" class="tree-particle">1</text>
-      <text x="100" y="60" class="tree-particle">0</text>
-      <text x="126" y="40" class="tree-particle">1</text>
-      <text x="144" y="56" class="tree-particle">1</text>
-      <text x="166" y="32" class="tree-particle">0</text>
-      <text x="186" y="48" class="tree-particle">1</text>
-      <text x="210" y="38" class="tree-particle">0</text>
-      <text x="228" y="58" class="tree-particle">1</text>
-      <text x="246" y="42" class="tree-particle">1</text>
-      <text x="264" y="62" class="tree-particle">0</text>
-      <text x="82" y="90" class="tree-particle">101</text>
-      <text x="132" y="84" class="tree-particle">010</text>
-      <text x="186" y="78" class="tree-particle">110</text>
-      <text x="232" y="92" class="tree-particle">001</text>
-      <text x="60" y="116" class="tree-particle">0110</text>
-      <text x="118" y="112" class="tree-particle">1001</text>
-      <text x="178" y="104" class="tree-particle">0101</text>
-      <text x="242" y="120" class="tree-particle">1010</text>
-      <circle cx="110" cy="72" r="2.1" class="tree-particle-dot" />
-      <circle cx="154" cy="94" r="1.6" class="tree-particle-dot" />
-      <circle cx="224" cy="72" r="2" class="tree-particle-dot" />
-      <circle cx="270" cy="96" r="1.5" class="tree-particle-dot" />
-      <circle cx="92" cy="102" r="1.7" class="tree-particle-dot" />
-    </g>
-
-    <g class="tree-trunk-group" aria-hidden="true">
-      <path d="M82 28 C 56 178, 54 612, 86 816 C 102 826, 120 824, 134 810 C 122 648, 126 188, 114 42 C 104 28, 92 24, 82 28 Z" class="tree-trunk-shell" />
-      <path d="M90 40 C 74 210, 72 614, 94 792 C 102 796, 110 796, 116 788 C 108 620, 110 194, 106 52 C 100 42, 96 38, 90 40 Z" class="tree-trunk" />
-      <path d="M91 36 C 78 218, 78 602, 96 780" class="tree-trunk-flow" />
-      <path d="M78 108 C 70 256, 72 538, 82 752" class="tree-trunk-detail" />
-      <path d="M104 90 C 100 248, 102 556, 108 760" class="tree-trunk-detail tree-trunk-detail--alt" />
-      <path d="M118 138 C 140 160, 160 188, 182 216" class="tree-limb-shadow" />
-      <path d="M114 242 C 140 254, 162 260, 186 268" class="tree-limb-shadow" />
-      <path d="M112 350 C 144 356, 170 360, 204 362" class="tree-limb-shadow" />
-      <path d="M112 446 C 148 446, 178 450, 214 454" class="tree-limb-shadow" />
-      <path d="M108 548 C 140 546, 172 546, 208 548" class="tree-limb-shadow" />
-      <path d="M104 646 C 138 638, 170 634, 206 632" class="tree-limb-shadow" />
-      <text x="98" y="432" class="tree-trunk-label" text-anchor="middle" transform="rotate(-90 98 432)">UPSKILL</text>
-    </g>
-
-    <a href="{{ '/' | relative_url }}" class="tree-anchor tree-branch tree-branch-home" aria-label="Home">
-      <g>
-        <rect x="112" y="124" width="286" height="42" class="tree-hitbox" />
-        <path d="M112 146 C 158 140, 196 138, 232 140 C 256 142, 282 138, 314 124" class="branch-line" />
-        <path d="M114 146 C 170 150, 228 148, 304 130 C 320 126, 336 126, 350 130" class="branch-energy" />
-        <text x="226" y="140" class="tree-link tree-link--primary {{ home_class }}">HOME</text>
-        <g class="tree-icon" transform="translate(336 114)">
-          <rect x="2" y="18" width="26" height="18" rx="2" class="tree-icon-stroke" />
-          <path d="M0 18 L15 6 L30 18" class="tree-icon-stroke" />
-          <line x1="20" y1="8" x2="20" y2="0" class="tree-icon-stroke" />
-          <rect x="12" y="24" width="7" height="12" class="tree-icon-fill" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/upskill-journey/' | relative_url }}" class="tree-anchor tree-branch tree-branch-upskill" aria-label="My Upskill Journey">
-      <g>
-        <rect x="108" y="220" width="300" height="44" class="tree-hitbox" />
-        <path d="M108 244 C 156 238, 210 234, 266 236 C 300 238, 330 232, 366 210" class="branch-line" />
-        <path d="M114 246 C 178 252, 250 248, 332 224 C 346 220, 358 216, 372 208" class="branch-energy" />
-        <text x="204" y="238" class="tree-link tree-link--primary {{ upskill_class }}">MY UPSKILL JOURNEY</text>
-        <g class="tree-icon" transform="translate(350 194)">
-          <path d="M8 38 L22 24 L16 24 L20 8 L8 24 L14 24 Z" class="tree-icon-fill" />
-          <path d="M6 40 L24 22" class="tree-icon-stroke" />
-          <path d="M3 36 C 5 42, 10 45, 16 45" class="tree-icon-stroke" />
-          <path d="M18 42 C 22 39, 26 34, 28 28" class="tree-icon-stroke" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/planning-tools/' | relative_url }}" class="tree-anchor tree-branch tree-branch-planning" aria-label="Planning and Tools">
-      <g>
-        <rect x="142" y="300" width="262" height="40" class="tree-hitbox" />
-        <path d="M158 250 C 174 274, 178 290, 174 308 C 206 302, 244 300, 304 294 C 326 292, 344 288, 362 278" class="branch-line branch-line--sub" />
-        <path d="M176 308 C 224 312, 284 308, 348 286" class="branch-energy branch-energy--sub" />
-        <text x="212" y="298" class="tree-link tree-link--subtle {{ planning_class }}">PLANNING &amp; TOOLS</text>
-        <g class="tree-icon" transform="translate(346 262)">
-          <circle cx="12" cy="18" r="8" class="tree-icon-stroke" />
-          <circle cx="30" cy="12" r="6" class="tree-icon-stroke" />
-          <path d="M12 8 V2 M12 34 V28 M2 18 H-4 M28 18 H22 M5 11 L1 7 M23 29 L27 33 M5 25 L1 29 M23 7 L27 3" class="tree-icon-stroke" />
-          <path d="M30 4 V0 M30 24 V20 M22 12 H18 M42 12 H38 M24 6 L21 3 M36 18 L39 21 M24 18 L21 21 M36 6 L39 3" class="tree-icon-stroke" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/resources/' | relative_url }}" class="tree-anchor tree-branch tree-branch-resources" aria-label="Resources">
-      <g>
-        <rect x="108" y="378" width="294" height="44" class="tree-hitbox" />
-        <path d="M108 404 C 154 394, 212 388, 278 390 C 308 392, 336 388, 370 378" class="branch-line" />
-        <path d="M114 406 C 174 414, 246 408, 336 388 C 350 386, 362 384, 374 380" class="branch-energy" />
-        <text x="198" y="398" class="tree-link tree-link--primary {{ resources_class }}">RESOURCES</text>
-        <g class="tree-icon" transform="translate(352 362)">
-          <path d="M0 10 C 10 4, 20 4, 30 10 V34 C 20 28, 10 28, 0 34 Z" class="tree-icon-stroke" />
-          <path d="M30 10 C 40 4, 50 4, 60 10 V34 C 50 28, 40 28, 30 34 Z" class="tree-icon-stroke" />
-          <line x1="30" y1="10" x2="30" y2="34" class="tree-icon-stroke" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/cybersecurity-labs/' | relative_url }}" class="tree-anchor tree-branch tree-branch-labs" aria-label="Cybersecurity Labs">
-      <g>
-        <rect x="108" y="486" width="304" height="46" class="tree-hitbox" />
-        <path d="M108 512 C 158 500, 222 496, 294 498 C 326 500, 356 496, 388 486" class="branch-line" />
-        <path d="M114 514 C 188 522, 270 516, 354 496 C 370 492, 382 490, 392 488" class="branch-energy" />
-        <text x="206" y="506" class="tree-link tree-link--primary {{ labs_class }}">CYBERSECURITY LABS</text>
-        <g class="tree-icon" transform="translate(362 468)">
-          <rect x="8" y="18" width="22" height="18" rx="3" class="tree-icon-stroke" />
-          <path d="M14 18 V12 C 14 6, 24 6, 24 12 V18" class="tree-icon-stroke" />
-          <circle cx="19" cy="27" r="2.4" class="tree-icon-fill" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/skills-applied-at-work/' | relative_url }}" class="tree-anchor tree-branch tree-branch-work" aria-label="Skills Applied at Work">
-      <g>
-        <rect x="108" y="602" width="304" height="46" class="tree-hitbox" />
-        <path d="M108 626 C 154 614, 220 608, 290 610 C 324 612, 354 608, 388 602" class="branch-line" />
-        <path d="M114 628 C 182 636, 262 630, 350 610 C 368 606, 380 604, 392 602" class="branch-energy branch-energy--amber" />
-        <text x="222" y="620" class="tree-link tree-link--primary {{ work_class }}">SKILLS APPLIED AT WORK</text>
-        <g class="tree-icon" transform="translate(358 584)">
-          <rect x="4" y="10" width="34" height="22" rx="3" class="tree-icon-stroke tree-icon-stroke--amber" />
-          <path d="M16 10 V4 H26 V10" class="tree-icon-stroke tree-icon-stroke--amber" />
-          <circle cx="32" cy="21" r="2.6" class="tree-icon-fill tree-icon-fill--amber" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/home-projects/' | relative_url }}" class="tree-anchor tree-branch tree-branch-projects" aria-label="Home Projects">
-      <g>
-        <rect x="108" y="706" width="304" height="44" class="tree-hitbox" />
-        <path d="M108 730 C 152 718, 216 712, 286 714 C 320 716, 350 712, 386 704" class="branch-line" />
-        <path d="M114 732 C 186 738, 264 734, 352 710 C 368 706, 380 704, 390 702" class="branch-energy" />
-        <text x="202" y="724" class="tree-link tree-link--primary {{ projects_class }}">HOME PROJECTS</text>
-        <g class="tree-icon" transform="translate(350 690)">
-          <rect x="0" y="6" width="28" height="18" rx="2" class="tree-icon-stroke" />
-          <line x1="4" y1="28" x2="24" y2="28" class="tree-icon-stroke" />
-          <line x1="14" y1="24" x2="14" y2="30" class="tree-icon-stroke" />
-          <path d="M36 8 C 46 8, 52 14, 52 20 M32 16 C 38 16, 42 20, 42 26 M28 24 C 32 24, 34 26, 34 30" class="tree-icon-stroke" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/about/' | relative_url }}" class="tree-anchor tree-branch tree-branch-about" aria-label="About and Contact">
-      <g>
-        <rect x="108" y="790" width="304" height="44" class="tree-hitbox" />
-        <path d="M108 812 C 156 798, 222 790, 292 792 C 326 794, 354 790, 386 784" class="branch-line" />
-        <path d="M114 814 C 188 820, 270 816, 358 792 C 372 790, 382 788, 390 784" class="branch-energy" />
-        <text x="208" y="806" class="tree-link tree-link--primary {{ about_class }}">ABOUT &amp; CONTACT</text>
-        <g class="tree-icon" transform="translate(350 772)">
-          <circle cx="18" cy="10" r="8" class="tree-icon-stroke" />
-          <path d="M2 32 C 6 22, 14 18, 24 18 C 34 18, 42 22, 46 32" class="tree-icon-stroke" />
-          <path d="M38 8 H62 V26 H38 Z" class="tree-icon-stroke" />
-          <path d="M38 8 L50 18 L62 8" class="tree-icon-stroke" />
-        </g>
-      </g>
-    </a>
-
-    <a href="{{ '/posts/' | relative_url }}" class="tree-anchor tree-branch tree-branch-posts" aria-label="All Posts">
-      <g>
-        <rect x="140" y="842" width="268" height="18" class="tree-hitbox" />
-      </g>
-    </a>
-
-    <g class="tree-posts-footer">
-      <a href="{{ '/posts/' | relative_url }}" class="tree-anchor tree-branch tree-branch-posts" aria-label="All Posts">
-        <g>
-          <rect x="108" y="834" width="304" height="44" class="tree-hitbox" />
-          <path d="M108 856 C 156 838, 228 832, 300 834 C 336 836, 364 832, 392 826" class="branch-line" />
-          <path d="M114 858 C 194 864, 280 858, 364 834 C 376 830, 386 828, 394 824" class="branch-energy" />
-          <text x="188" y="850" class="tree-link tree-link--primary {{ posts_class }}">ALL POSTS</text>
-          <g class="tree-icon" transform="translate(348 818)">
-            <circle cx="16" cy="18" r="12" class="tree-icon-stroke" />
-            <path d="M4 18 H28 M16 6 C 20 12, 20 24, 16 30 M10 10 C 13 16, 13 20, 10 26 M22 10 C 19 16, 19 20, 22 26" class="tree-icon-stroke" />
-            <path d="M34 8 C 44 2, 54 2, 64 8 V30 C 54 24, 44 24, 34 30 Z" class="tree-icon-stroke" />
-            <path d="M64 8 C 74 2, 84 2, 94 8 V30 C 84 24, 74 24, 64 30 Z" class="tree-icon-stroke" />
-            <line x1="64" y1="8" x2="64" y2="30" class="tree-icon-stroke" />
-          </g>
-        </g>
-      </a>
-    </g>
-
-    <g class="tree-roots" aria-hidden="true">
-      <path d="M86 804 C 100 816, 114 828, 126 850 C 138 836, 152 824, 170 816" class="tree-root" />
-      <path d="M90 810 C 112 820, 144 822, 196 828 C 230 832, 258 844, 284 858" class="tree-root tree-root--thick" />
-      <path d="M84 806 C 94 826, 98 846, 98 860" class="tree-root" />
-      <path d="M96 808 C 126 836, 166 850, 220 856" class="tree-root tree-root--amber" />
-      <path d="M100 808 C 152 812, 214 814, 304 826" class="tree-root tree-root--thick" />
-      <path d="M118 810 C 150 790, 182 784, 222 786" class="tree-root tree-root--dim" />
-      <circle cx="282" cy="858" r="4" class="tree-root-node tree-root-node--blue" />
-      <circle cx="220" cy="856" r="4" class="tree-root-node tree-root-node--amber" />
-      <circle cx="124" cy="850" r="3.4" class="tree-root-node tree-root-node--blue" />
-    </g>
-  </svg>
+    <div class="tree-nav-overlay">
+      <a href="{{ '/' | relative_url }}" class="tree-overlay-link tree-overlay-link--home {{ home_class }}">HOME</a>
+      <a href="{{ '/upskill-journey/' | relative_url }}" class="tree-overlay-link tree-overlay-link--journey {{ upskill_class }}">MY UPSKILL JOURNEY</a>
+      <a href="{{ '/planning-tools/' | relative_url }}" class="tree-overlay-link tree-overlay-link--planning {{ planning_class }}">PLANNING &amp; TOOLS</a>
+      <a href="{{ '/resources/' | relative_url }}" class="tree-overlay-link tree-overlay-link--resources {{ resources_class }}">RESOURCES</a>
+      <a href="{{ '/cybersecurity-labs/' | relative_url }}" class="tree-overlay-link tree-overlay-link--labs {{ labs_class }}">CYBERSECURITY LABS</a>
+      <a href="{{ '/skills-applied-at-work/' | relative_url }}" class="tree-overlay-link tree-overlay-link--work {{ work_class }}">SKILLS APPLIED AT WORK</a>
+      <a href="{{ '/home-projects/' | relative_url }}" class="tree-overlay-link tree-overlay-link--projects {{ projects_class }}">HOME PROJECTS</a>
+      <a href="{{ '/about/' | relative_url }}" class="tree-overlay-link tree-overlay-link--about {{ about_class }}">ABOUT &amp; CONTACT</a>
+      <a href="{{ '/posts/' | relative_url }}" class="tree-overlay-link tree-overlay-link--posts {{ posts_class }}">ALL POSTS</a>
+    </div>
+  </div>
 </nav>
