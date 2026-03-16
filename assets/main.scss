@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "minima";
+@use "minima" as *;
 
 :root {
   --bg-primary: #161616;
@@ -119,24 +119,120 @@ body {
   height: auto;
 }
 
-.tree-branch {
-  stroke: var(--wood-main);
+.tree-trunk {
+  fill: none;
+  stroke: url(#trunk-gradient);
+  stroke-width: 16;
+  stroke-linecap: round;
+}
+
+.tree-trunk-flow {
+  fill: none;
+  stroke: url(#trunk-flow-gradient);
+  stroke-width: 8;
+  stroke-linecap: round;
+  opacity: 0.7;
+}
+
+.tree-trunk-detail {
+  fill: none;
+  stroke: rgba(53, 31, 18, 0.45);
   stroke-width: 4;
   stroke-linecap: round;
 }
 
-.tree-branch--sub {
-  stroke: var(--wood-shadow);
+.tree-trunk-detail--alt {
+  stroke: rgba(191, 145, 96, 0.18);
+  stroke-width: 3;
+}
+
+.tree-trunk-label {
+  fill: var(--accent-green);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.tree-particle {
+  fill: rgba(126, 200, 247, 0.22);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.tree-particle-dot {
+  fill: rgba(126, 200, 247, 0.18);
+}
+
+.tree-branch {
+  transition: transform 0.2s ease, filter 0.2s ease;
+  transform-origin: left center;
+  cursor: pointer;
+}
+
+.tree-branch:hover,
+.tree-branch:focus-within {
+  transform: translateX(4px);
+  filter: drop-shadow(0 0 6px rgba(80, 180, 255, 0.55));
+}
+
+.branch-line {
+  fill: none;
+  stroke: var(--wood-main);
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke 0.2s ease;
+}
+
+.branch-line--sub {
+  stroke: #7d5234;
   stroke-width: 2.5;
   stroke-dasharray: 3 4;
+}
+
+.tree-branch:hover .branch-line,
+.tree-branch:focus-within .branch-line {
+  stroke: #a0c8f0;
+}
+
+.tree-hitbox {
+  fill: transparent;
+}
+
+.tree-anchor {
+  text-decoration: none;
+  outline: none;
+}
+
+.tree-tip {
+  fill: rgba(24, 24, 24, 0.96);
+  stroke: rgba(126, 200, 247, 0.35);
+  stroke-width: 1.2;
+}
+
+.tree-tip--sub {
+  stroke: rgba(126, 200, 247, 0.22);
+}
+
+.tree-tip-text {
+  fill: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.tree-tip-text--sub {
+  font-size: 7px;
 }
 
 .tree-link {
   fill: var(--text-primary);
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: 0.03em;
-  transition: fill 0.2s ease;
+  letter-spacing: 0.04em;
+  transition: fill 0.2s ease, filter 0.2s ease;
 }
 
 .tree-link--sub {
@@ -144,15 +240,45 @@ body {
   font-size: 10px;
 }
 
-.tree-anchor:hover .tree-link,
+.tree-branch:hover .tree-link,
+.tree-branch:focus-within .tree-link,
 .tree-anchor:focus .tree-link,
 .tree-link.active {
-  fill: var(--accent-amber);
+  fill: #7ec8f7;
+  filter: drop-shadow(0 0 5px rgba(120, 200, 255, 0.7));
 }
 
 .tree-link.active {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-green);
+  fill: var(--accent-green);
+  font-weight: 700;
+}
+
+.tree-root {
+  fill: none;
+  stroke: rgba(80, 180, 255, 0.4);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.tree-root--alt {
+  stroke: rgba(80, 180, 255, 0.26);
+  stroke-width: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tree-branch,
+  .branch-line,
+  .tree-link {
+    transition: none;
+  }
+
+  .tree-trunk-flow {
+    opacity: 0.3;
+  }
+
+  #trunk-flow-gradient animateTransform {
+    display: none;
+  }
 }
 
 .home-content {
