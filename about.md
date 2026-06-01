@@ -2,6 +2,7 @@
 layout: page
 title: About & Contact
 permalink: /about/
+hide_chrome: true
 ---
 
 ## Jean Pougoue — Network & System Engineer -> Cloud Security

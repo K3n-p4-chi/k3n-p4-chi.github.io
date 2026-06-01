@@ -1,0 +1,16 @@
+---
+layout: default
+hide_chrome: true
+---
+<div class="site-shell">
+  {% include navigation-tree.html %}
+  <div class="site-shell-main">
+    <article class="site-shell-content page-shell-content">
+      <header class="page-shell-header">
+        <h1 class="page-heading">{{ page.title | escape }}</h1>
+      </header>
+      {{ content }}
+    </article>
+    {% include site-contact-pane.html %}
+  </div>
+</div>

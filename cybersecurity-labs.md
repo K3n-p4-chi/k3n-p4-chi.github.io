@@ -2,9 +2,8 @@
 layout: page
 title: Cybersecurity Labs
 permalink: /cybersecurity-labs/
+hide_chrome: true
 ---
-
-# Cybersecurity Labs
 
 This section contains security-focused build work and lab projects. It is where defensive engineering, monitoring, traffic analysis, and practical security environments are documented as structured projects rather than loose notes.
 

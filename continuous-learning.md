@@ -2,9 +2,8 @@
 layout: page
 title: My Upskill Journey
 permalink: /upskill-journey/
+hide_chrome: true
 ---
-
-# My Upskill Journey
 
 This section is the backbone of the whole site. It tracks the structured learning journey, the certification order, and the evidence of progress behind the move into cloud security.
 
@@ -52,11 +51,11 @@ The current life setup requires shorter, repeatable sessions instead of idealise
 
 ## Read The Evidence
 
+- [Planning & Tools](/planning-tools/)
 - [Study Notes](/study-notes/)
 - [Cybersecurity Labs](/cybersecurity-labs/)
 - [Home Projects](/home-projects/)
 - [Skills Applied at Work](/skills-applied-at-work/)
-- [Planning & Tools](/planning-tools/)
 
 ---
 

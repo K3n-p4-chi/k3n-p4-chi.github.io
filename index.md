@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+hide_chrome: true
 ---
 
 ## Hybrid Infra/Cloud Security Engineering Journey

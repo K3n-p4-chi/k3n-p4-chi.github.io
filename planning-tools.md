@@ -2,9 +2,8 @@
 layout: page
 title: Planning & Tools
 permalink: /planning-tools/
+hide_chrome: true
 ---
-
-# Planning & Tools
 
 This section covers the operational side of the journey: planning sessions, automation work, tracker improvements, and the systems used to keep the upskilling project structured.
 

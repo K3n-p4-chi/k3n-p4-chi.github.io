@@ -2,9 +2,8 @@
 layout: page
 title: Resources
 permalink: /resources/
+hide_chrome: true
 ---
-
-# Learning Resources & Tools
 
 ## 📚 **Certification Study Materials**
 

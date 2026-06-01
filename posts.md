@@ -2,9 +2,8 @@
 layout: page
 title: All Posts
 permalink: /posts/
+hide_chrome: true
 ---
-
-# All Blog Posts
 
 {% assign combined = site["study-notes"] | concat: site["planning-tools"] | concat: site["cybersecurity-labs"] | concat: site["home-projects"] | concat: site["work-applied"] | sort: "date" | reverse %}
 {% if combined.size > 0 %}

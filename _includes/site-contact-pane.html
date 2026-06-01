@@ -1,0 +1,23 @@
+<aside class="home-contact-pane" aria-labelledby="home-contact-title">
+  <div class="home-contact-card">
+    <p class="home-contact-kicker">Bottom Pane</p>
+    <h2 id="home-contact-title"><a class="home-contact-title-link" href="{{ '/about/' | relative_url }}">About &amp; Contact</a></h2>
+    <p>Jean Pougoue. Network and systems engineering background, now building toward hybrid cloud security engineering.</p>
+  </div>
+  <div class="home-contact-card">
+    <h3>Direct</h3>
+    <ul class="home-contact-list">
+      <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/{{ site.linkedin_username }}">{{ site.linkedin_username }}</a></li>
+      <li>GitHub: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>
+      <li>Location: South Ockendon, UK</li>
+    </ul>
+  </div>
+  <div class="home-contact-card">
+    <h3>Useful Pages</h3>
+    <ul class="home-contact-list">
+      <li><a href="{{ '/about/' | relative_url }}">Full About &amp; Contact page</a></li>
+      <li><a href="{{ '/posts/' | relative_url }}">Browse all posts</a></li>
+    </ul>
+  </div>
+</aside>

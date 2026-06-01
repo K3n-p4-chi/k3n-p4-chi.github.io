@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+  </head>
+  {%- assign uses_shell = false -%}
+  {%- if page.hide_chrome or page.layout == 'home' or page.layout == 'page' -%}
+    {%- assign uses_shell = true -%}
+  {%- endif -%}
+  <body{% if uses_shell %} class="page-home"{% endif %}>
+    {%- unless uses_shell -%}
+      {%- include header.html -%}
+    {%- endunless -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper{% if uses_shell %} wrapper--home{% endif %}">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- unless uses_shell -%}
+      {%- include footer.html -%}
+    {%- endunless -%}
+  </body>
+</html>

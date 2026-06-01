@@ -2,9 +2,8 @@
 layout: page
 title: Home Projects
 permalink: /home-projects/
+hide_chrome: true
 ---
-
-# Home Projects
 
 This section is for standalone build work done at home that is broader than lab notes. These are project-style entries with a clear problem, architecture, implementation path, and outcome.
 

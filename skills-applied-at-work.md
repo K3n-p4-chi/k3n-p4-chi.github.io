@@ -2,9 +2,8 @@
 layout: page
 title: Skills Applied at Work
 permalink: /skills-applied-at-work/
+hide_chrome: true
 ---
-
-# Skills Applied at Work
 
 This section is for practical work-relevant outcomes where learning turned into something useful, efficient, or measurable in a professional environment.
 

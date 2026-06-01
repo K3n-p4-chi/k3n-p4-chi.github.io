@@ -2,9 +2,8 @@
 layout: page
 title: Study Notes & Learning
 permalink: /study-notes/
+hide_chrome: true
 ---
-
-# Study Notes & Learning
 
 This section is the working record of certification study, revision blocks, and concept consolidation. It is where the real learning trail lives: what was studied, what clicked, what needs review, and how the current track is progressing.
 

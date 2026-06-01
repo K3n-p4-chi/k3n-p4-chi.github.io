@@ -1,34 +1,29 @@
-<nav class="tree-nav tree-nav--overlay" aria-label="Tree navigation">
+<nav class="tree-nav" aria-label="Tree navigation">
   {% assign current = page.url | default: "/" %}
-  {% assign home_class = "" %}{% if current == "/" %}{% assign home_class = "active" %}{% endif %}
-  {% assign upskill_class = "" %}{% if current == "/upskill-journey/" %}{% assign upskill_class = "active" %}{% endif %}
-  {% assign planning_class = "" %}{% if current == "/planning-tools/" %}{% assign planning_class = "active" %}{% endif %}
-  {% assign resources_class = "" %}{% if current == "/resources/" %}{% assign resources_class = "active" %}{% endif %}
-  {% assign labs_class = "" %}{% if current == "/cybersecurity-labs/" %}{% assign labs_class = "active" %}{% endif %}
-  {% assign work_class = "" %}{% if current == "/skills-applied-at-work/" %}{% assign work_class = "active" %}{% endif %}
-  {% assign projects_class = "" %}{% if current == "/home-projects/" %}{% assign projects_class = "active" %}{% endif %}
-  {% assign about_class = "" %}{% if current == "/about/" %}{% assign about_class = "active" %}{% endif %}
-  {% assign posts_class = "" %}{% if current == "/posts/" %}{% assign posts_class = "active" %}{% endif %}
+  {% assign home_class = "" %}{% if current == "/" %}{% assign home_class = "is-active" %}{% endif %}
+  {% assign upskill_class = "" %}{% if current == "/upskill-journey/" %}{% assign upskill_class = "is-active" %}{% endif %}
+  {% assign planning_class = "" %}{% if current == "/planning-tools/" or current contains "/planning-tools/" %}{% assign planning_class = "is-active" %}{% endif %}
+  {% assign resources_class = "" %}{% if current == "/resources/" %}{% assign resources_class = "is-active" %}{% endif %}
+  {% assign labs_class = "" %}{% if current == "/cybersecurity-labs/" or current contains "/cybersecurity-labs/" %}{% assign labs_class = "is-active" %}{% endif %}
+  {% assign work_class = "" %}{% if current == "/skills-applied-at-work/" or current contains "/skills-applied-at-work/" %}{% assign work_class = "is-active" %}{% endif %}
+  {% assign projects_class = "" %}{% if current == "/home-projects/" or current contains "/home-projects/" %}{% assign projects_class = "is-active" %}{% endif %}
+  {% assign posts_class = "" %}{% if current == "/posts/" %}{% assign posts_class = "is-active" %}{% endif %}
 
   <div class="tree-nav-stage">
-    <img
-      class="tree-nav-art"
-      src="{{ '/assets/images/navigation-tree.png' | relative_url }}"
-      alt=""
-      loading="eager"
-      decoding="async"
-    >
+    <div class="tree-nav-header">
+      <a href="{{ '/' | relative_url }}" class="tree-nav-home {{ home_class }}">Home</a>
+      <p class="tree-nav-kicker">Blog architecture shell</p>
+      <h2 class="tree-nav-title">Navigate the journey</h2>
+    </div>
 
-    <div class="tree-nav-overlay">
-      <a href="{{ '/' | relative_url }}" aria-label="Home" class="tree-overlay-link tree-overlay-link--home {{ home_class }}"><span class="sr-only">Home</span></a>
-      <a href="{{ '/upskill-journey/' | relative_url }}" aria-label="My Upskill Journey" class="tree-overlay-link tree-overlay-link--journey {{ upskill_class }}"><span class="sr-only">My Upskill Journey</span></a>
-      <a href="{{ '/planning-tools/' | relative_url }}" aria-label="Planning and Tools" class="tree-overlay-link tree-overlay-link--planning {{ planning_class }}"><span class="sr-only">Planning and Tools</span></a>
-      <a href="{{ '/resources/' | relative_url }}" aria-label="Resources" class="tree-overlay-link tree-overlay-link--resources {{ resources_class }}"><span class="sr-only">Resources</span></a>
-      <a href="{{ '/cybersecurity-labs/' | relative_url }}" aria-label="Cybersecurity Labs" class="tree-overlay-link tree-overlay-link--labs {{ labs_class }}"><span class="sr-only">Cybersecurity Labs</span></a>
-      <a href="{{ '/skills-applied-at-work/' | relative_url }}" aria-label="Skills Applied at Work" class="tree-overlay-link tree-overlay-link--work {{ work_class }}"><span class="sr-only">Skills Applied at Work</span></a>
-      <a href="{{ '/home-projects/' | relative_url }}" aria-label="Home Projects" class="tree-overlay-link tree-overlay-link--projects {{ projects_class }}"><span class="sr-only">Home Projects</span></a>
-      <a href="{{ '/about/' | relative_url }}" aria-label="About and Contact" class="tree-overlay-link tree-overlay-link--about {{ about_class }}"><span class="sr-only">About and Contact</span></a>
-      <a href="{{ '/posts/' | relative_url }}" aria-label="All Posts" class="tree-overlay-link tree-overlay-link--posts {{ posts_class }}"><span class="sr-only">All Posts</span></a>
+    <div class="tree-nav-links">
+      <a href="{{ '/upskill-journey/' | relative_url }}" class="tree-node {{ upskill_class }}">My Upskill Journey</a>
+      <a href="{{ '/planning-tools/' | relative_url }}" class="tree-node {{ planning_class }}">Planning &amp; Tools</a>
+      <a href="{{ '/resources/' | relative_url }}" class="tree-node {{ resources_class }}">Resources</a>
+      <a href="{{ '/cybersecurity-labs/' | relative_url }}" class="tree-node {{ labs_class }}">Cybersecurity Labs</a>
+      <a href="{{ '/skills-applied-at-work/' | relative_url }}" class="tree-node {{ work_class }}">Skills Applied at Work</a>
+      <a href="{{ '/home-projects/' | relative_url }}" class="tree-node {{ projects_class }}">Home Projects</a>
+      <a href="{{ '/posts/' | relative_url }}" class="tree-node {{ posts_class }}">All Posts</a>
     </div>
   </div>
 </nav>
